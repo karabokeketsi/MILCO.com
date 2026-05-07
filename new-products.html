@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Arrivals and Subscriptions – MILCO Lesotho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  
+</head>
+<body class="new-arrivals-page">
+
+<nav>
+  <a href="index.html" class="nav-logo">MIL<span>CO</span></a>
+
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="new-products.html">New Arrivals</a></li>
+    <li><a href="stakeholders.html">Stakeholders</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+</nav>
+
+<div class="page-hero">
+  <div class="hero-badge">Just Launched</div>
+  <h1>Fresh From<br/>Lesotho's Makers</h1>
+  <p>Discover the latest locally produced innovations — from our newest artisans and entrepreneurs. Be the first to experience what's new at MILCO.</p>
+</div>
+
+<!-- NEW ARRIVALS -->
+<section class="section">
+  <div class="section-label">Latest Additions</div>
+  <div class="section-title">New Arrivals</div>
+  <p class="section-sub">These products just arrived on our shelves — handpicked from Lesotho's most innovative local producers.</p>
+
+  <div class="new-products-grid">
+    <div class="new-product-card">
+      <span class="new-label">New</span>
+      <div class="new-img"><img src="berryjam.jpg" alt="berryjam"></div>
+      <div class="new-info">
+        <div class="new-cat">Food Products</div>
+        <div class="new-name">Wild Berry Jam</div>
+        <div class="new-desc">Handpicked mountain berries transformed into a rich, natural preserve by Mokhotlong farmers.</div>
+        <div class="new-footer">
+          <div class="new-price">M 48.00 <small>250g jar</small></div>
+          <button class="btn-cart" onclick="addToCart('Wild Berry Jam')">+ Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-product-card">
+      <span class="new-label">New</span>
+      <div class="new-img"><img src="tapestry.jpg" alt="wall tapestry"></div>
+      <div class="new-info">
+        <div class="new-cat">Clothing & Crafts</div>
+        <div class="new-name">Woven Wall Tapestry</div>
+        <div class="new-desc">Traditional Basotho weaving patterns reimagined as modern home decor — each piece unique.</div>
+        <div class="new-footer">
+          <div class="new-price">M 320.00 <small>60x80cm</small></div>
+          <button class="btn-cart" onclick="addToCart('Woven Wall Tapestry')">+ Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-product-card">
+      <span class="new-label">New</span>
+      <div class="new-img"><img src="bodybutter.jpg" alt="body body butter"></div>
+      <div class="new-info">
+        <div class="new-cat">Skincare</div>
+        <div class="new-name">Lavender Body Butter</div>
+        <div class="new-desc">Deeply moisturising body butter infused with locally cultivated lavender and shea.</div>
+        <div class="new-footer">
+          <div class="new-price">M 95.00 <small>200ml</small></div>
+          <button class="btn-cart" onclick="addToCart('Lavender Body Butter')">+ Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-product-card">
+      <span class="new-label">New</span>
+      <div class="new-img"><img src="tea.jpg" alt="rooibos tea"></div>
+      <div class="new-info">
+        <div class="new-cat">Food Products</div>
+        <div class="new-name">Highland Rooibos Tea</div>
+        <div class="new-desc">Organic rooibos blended with Lesotho herbs — a soothing highland brew with no caffeine.</div>
+        <div class="new-footer">
+          <div class="new-price">M 55.00 <small>50g pouch</small></div>
+          <button class="btn-cart" onclick="addToCart('Highland Rooibos Tea')">+ Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-product-card">
+      <span class="new-label">New</span>
+      <div class="new-img"><img src="seedlingkit.jpg" alt="seedling kit"></div>
+      <div class="new-info">
+        <div class="new-cat">Agriculture</div>
+        <div class="new-name">Herb Seedling Kit</div>
+        <div class="new-desc">Grow your own kitchen herbs at home — includes basil, thyme, and parsley with Lesotho soil mix.</div>
+        <div class="new-footer">
+          <div class="new-price">M 75.00 <small>3-pot starter kit</small></div>
+          <button class="btn-cart" onclick="addToCart('Herb Seedling Kit')">+ Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-product-card">
+      <span class="new-label">New</span>
+      <div class="new-img"><img src="candle.jpg" alt="beewax candles"></div>
+      <div class="new-info">
+        <div class="new-cat">Crafts</div>
+        <div class="new-name">Beeswax Candle Set</div>
+        <div class="new-desc">Hand-poured candles from pure Lesotho beeswax, scented with local botanical essential oils.</div>
+        <div class="new-footer">
+          <div class="new-price">M 110.00 <small>Set of 3</small></div>
+          <button class="btn-cart" onclick="addToCart('Beeswax Candle Set')">+ Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cart-toast" id="cartToast"> Added to cart!</div>
+
+<footer>
+  <p>© 2025 MILCO – Made In Lesotho Cooperative | Sefika Complex, Maseru | <a href="tel:+26658921648">+266 5892 1648</a> | <a href="index.html">Home</a> | <a href="products.html">All Products</a></p>
+</footer>
+
+<script>
+  function addToCart(name) {
+    const toast = document.getElementById('cartToast');
+    toast.textContent = `✓ "${name}" added to cart!`;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3000);
+  }
+    function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    const burger = document.getElementById("hamburger");
+    const overlay = document.getElementById("navOverlay");
+
+    nav.classList.toggle("show");
+    burger.classList.toggle("active");
+    overlay.classList.toggle("show");
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stakeholders – MILCO Lesotho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  
+</head>
+<body class="stakeholders-page">
+
+<nav>
+  <a href="index.html" class="nav-logo">MIL<span>CO</span></a>
+
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="new-products.html">New Arrivals</a></li>
+    <li><a href="stakeholders.html">Stakeholders</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+</nav>
+
+<div class="page-hero">
+  <div class="section-label">Our Network</div>
+  <h1>Stakeholders and Partners</h1>
+  <p>MILCO exists because of a powerful coalition of institutions, universities, government bodies, and local entrepreneurs all committed to growing Lesotho's economy together.</p>
+</div>
+
+<!-- FEATURED PARTNERS -->
+<section class="section">
+  <div class="section-label">Founding Partners</div>
+  <div class="section-title">Our Core Partners</div>
+  <p class="section-sub">These institutions form the backbone of MILCO's mission and operations.</p>
+
+  <div class="featured-grid">
+    <a href="https://www.nul.ls" target="_blank" class="featured-card">
+      <div class="card-logo"><img src="nul.jpg" alt="NUL Innovation Hub logo"></div>
+      <div>
+        <div class="card-type">Academic Institution</div>
+        <div class="card-name">NUL Innovation Hub</div>
+        <div class="card-desc">The National University of Lesotho Innovation Hub is the founding body of MILCO. It supports local entrepreneurs through research, mentorship, and market access.</div>
+        <span class="card-link">Visit Website</span>
+      </div>
+    </a>
+
+    <a href="https://www.limkokwing.ac.ls" target="_blank" class="featured-card">
+      <div class="card-logo"><img src="luct.jpg" alt="Limkokwing University LOGO"></div>
+      <div>
+        <div class="card-type">Academic Institution</div>
+        <div class="card-name">Limkokwing University</div>
+        <div class="card-desc">Limkokwing University of Creative Technology contributes digital platform development, design, and digital marketing expertise to grow MILCO's online presence.</div>
+        <span class="card-link">Visit Website</span>
+      </div>
+    </a>
+
+    <a href="https://www.gov.ls" target="_blank" class="featured-card">
+      <div class="card-logo"><img src="govement.jpg" alt="GOVERMENT OF LESOTHO logo"></div>
+      <div>
+        <div class="card-type">Government</div>
+        <div class="card-name">Government of Lesotho</div>
+        <div class="card-desc">Through the Ministry of Trade and Industry, the Government of Lesotho supports MILCO's mandate to promote local manufacturing and economic development.</div>
+        <span class="card-link">Visit Website</span>
+      </div>
+    </a>
+
+    <a href="https://www.lndc.org.ls" target="_blank" class="featured-card">
+      <div class="card-logo"><img src="lndc.jpg" alt="LNDC logo"></div>
+      <div>
+        <div class="card-type">Development Agency</div>
+        <div class="card-name">LNDC</div>
+        <div class="card-desc">The Lesotho National Development Corporation provides investment facilitation and infrastructure support to local businesses selling through MILCO.</div>
+        <span class="card-link">Visit Website</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- ALL STAKEHOLDERS TABLE -->
+  <div class="section-label">Complete Directory</div>
+  <div class="section-title">All Stakeholders</div>
+  <p class="section-sub" style="margin-bottom:2rem;">A full list of organisations, businesses, and institutions that support or supply MILCO.</p>
+
+  <table class="stakeholders-table">
+    <thead>
+      <tr>
+        <th>Organisation</th>
+        <th>Type</th>
+        <th>Role in MILCO</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NUL Innovation Hub</td>
+        <td><span class="type-badge academic">Academic</span></td>
+        <td>Founding body, research & mentorship</td>
+        <td><a href="https://www.nul.ls" target="_blank" class="ext-link">nul.ls </a></td>
+      </tr>
+      <tr>
+        <td>Limkokwing University</td>
+        <td><span class="type-badge academic">Academic</span></td>
+        <td>Digital platform development</td>
+        <td><a href="https://limkokwing.net/lesotho/" target="_blank" class="ext-link">limkokwing.ac.ls </a></td>
+      </tr>
+      <tr>
+        <td>Government of Lesotho</td>
+        <td><span class="type-badge govt">Government</span></td>
+        <td>Policy support, Ministry of Trade</td>
+        <td><a href="https://www.gov.ls" target="_blank" class="ext-link">gov.ls </a></td>
+      </tr>
+      <tr>
+        <td>LNDC</td>
+        <td><span class="type-badge govt">Parastatal</span></td>
+        <td>Investment facilitation</td>
+        <td><a href="https://www.lndc.org.ls" target="_blank" class="ext-link">lndc.org.ls </a></td>
+      </tr>
+      <tr>
+        <td>Basotho Artisans Cooperative</td>
+        <td><span class="type-badge">Cooperative</span></td>
+        <td>Craft & clothing supplier</td>
+        <td><span style="color:#aaa">—</span></td>
+      </tr>
+      <tr>
+        <td>Maluti Honey Producers</td>
+        <td><span class="type-badge">Local Business</span></td>
+        <td>Honey & agriculture products</td>
+        <td><span style="color:#aaa">—</span></td>
+      </tr>
+      <tr>
+        <td>Lesotho Women Entrepreneurs</td>
+        <td><span class="type-badge ngo">NGO</span></td>
+        <td>Women-led business support</td>
+        <td><span style="color:#aaa">—</span></td>
+      </tr>
+      <tr>
+        <td>Sefika Complex</td>
+        <td><span class="type-badge">Property</span></td>
+        <td>Physical retail space provider</td>
+        <td><span style="color:#aaa">—</span></td>
+      </tr>
+      <tr>
+        <td>Local Farmers Association</td>
+        <td><span class="type-badge">Agriculture</span></td>
+        <td>Fresh produce supplier</td>
+        <td><span style="color:#aaa">—</span></td>
+      </tr>
+      <tr>
+        <td>Lesotho Tourism Development Corp</td>
+        <td><span class="type-badge govt">Government</span></td>
+        <td>Promotion of local products to tourists</td>
+        <td><a href="https://www.ltdc.org.ls" target="_blank" class="ext-link">ltdc.org.ls</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- CALL TO JOIN -->
+<section class="join-section">
+  <div class="section-label">Grow With Us</div>
+  <h2>Become a Stakeholder</h2>
+  <p>Are you a local business, farmer, artisan, or institution wanting to connect with MILCO? We'd love to have you in our network.</p>
+  <a href="contact.html" class="btn-primary">Get in Touch</a>
+</section>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    const burger = document.getElementById("hamburger");
+    const overlay = document.getElementById("navOverlay");
+
+    nav.classList.toggle("show");
+    burger.classList.toggle("active");
+    overlay.classList.toggle("show");
+  }
+</script>
+<footer>
+  <p>© 2025 MILCO – Made In Lesotho Cooperative | Sefika Complex, Maseru | <a href="tel:+26658921648">+266 5892 1648</a> | <a href="index.html">Home</a> | <a href="products.html">Products</a></p>
+</footer>
+</body>
+</html>

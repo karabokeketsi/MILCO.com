@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products – MILCO Lesotho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  
+</head>
+<body class="products-page">
+
+<nav>
+  <a href="index.html" class="nav-logo">MIL<span>CO</span></a>
+
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="new-products.html">New Arrivals</a></li>
+    <li><a href="stakeholders.html">Stakeholders</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+</nav>
+
+<div class="page-hero">
+  <div class="section-label">Our Catalogue</div>
+  <h1>All Products</h1>
+  <p>Browse 200+ locally made products from Lesotho's finest artisans, farmers, and entrepreneurs.</p>
+</div>
+
+<div class="shop-layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="filter-section">
+      <div class="filter-title">Category</div>
+      <div class="filter-option"><input type="checkbox" id="c1" checked/><label for="c1">All Products</label></div>
+      <div class="filter-option"><input type="checkbox" id="c2"/><label for="c2">Agriculture</label></div>
+      <div class="filter-option"><input type="checkbox" id="c3"/><label for="c3">Food Products</label></div>
+      <div class="filter-option"><input type="checkbox" id="c4"/><label for="c4">Skincare</label></div>
+      <div class="filter-option"><input type="checkbox" id="c5"/><label for="c5">Clothing and Crafts</label></div>
+      <div class="filter-option"><input type="checkbox" id="c6"/><label for="c6">Stationery</label></div>
+      <div class="filter-option"><input type="checkbox" id="c7"/><label for="c7">Furniture</label></div>
+    </div>
+
+  </aside>
+
+  <!-- PRODUCTS -->
+  <div class="products-area">
+    <div class="products-toolbar">
+      <span class="products-count">Showing <strong>18</strong> products</span>
+      <select class="sort-select">
+        <option>Sort: Featured</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Newest First</option>
+      </select>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card">
+        
+        <div class="product-img">
+          <img src="honey.jpg" alt="Pure Basotho Honey">
+          <span class="product-badge">Best Seller</span>
+        </div>
+
+        <div class="product-info">
+          <div class="product-cat">Agriculture</div>
+          <div class="product-name">Pure Basotho Honey</div>
+          <div class="product-desc">
+            Raw, unfiltered honey harvested from highland beehives in the Maluti Mountains.
+          </div>
+
+          <div class="product-footer">
+            <span class="product-price">M 45.00</span>
+            <button class="add-to-cart" onclick="addToCart('Pure Basotho Honey')">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="Peanut.jpg" alt="Natural Peanut Butter"></div>
+        <div class="product-info">
+          <div class="product-cat">Food Products</div>
+          <div class="product-name">Natural Peanut Butter</div>
+          <div class="product-desc">Smooth or crunchy — made from locally grown groundnuts with no additives.</div>
+          <div class="product-footer">
+            <span class="product-price">M 38.00</span>
+            <button class="add-to-cart" onclick="addToCart('Natural Peanut Butter')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="glycerine.jpg" alt="Rosehip Glycerin"><span class="product-badge">New</span></div>
+        <div class="product-info">
+          <div class="product-cat">Skincare</div>
+          <div class="product-name">Rosehip Glycerin</div>
+          <div class="product-desc">Natural skin moisturiser crafted from Lesotho's highland rosehip plants.</div>
+          <div class="product-footer">
+            <span class="product-price">M 85.00</span>
+            <button class="add-to-cart" onclick="addToCart('Rosehip Glycerin')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="blanket.jpg" alt="basotho blanket waer"></div>
+        <div class="product-info">
+          <div class="product-cat">Clothing & Crafts</div>
+          <div class="product-name">Basotho Blanket Wear</div>
+          <div class="product-desc">Traditional Basotho blanket-inspired clothing handcrafted by local artisans.</div>
+          <div class="product-footer">
+            <span class="product-price">M 250.00</span>
+            <button class="add-to-cart" onclick="addToCart('Basotho Blanket Wear')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="muesli.jpg" alt="local muesli mix"></div>
+        <div class="product-info">
+          <div class="product-cat">Food Products</div>
+          <div class="product-name">Local Muesli Mix</div>
+          <div class="product-desc">A hearty mix of rolled oats, dried fruits, and nuts all sourced within Lesotho.</div>
+          <div class="product-footer">
+            <span class="product-price">M 52.00</span>
+            <button class="add-to-cart" onclick="addToCart('Local Muesli Mix')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="vegetables.jpg" alt="fresh vestables"></div>
+        <div class="product-info">
+          <div class="product-cat">Agriculture</div>
+          <div class="product-name">Fresh Vegetables Bundle</div>
+          <div class="product-desc">Seasonal vegetables sourced from highland farms — fresh twice a week.</div>
+          <div class="product-footer">
+            <span class="product-price">M 15.00</span>
+            <button class="add-to-cart" onclick="addToCart('Fresh Vegetables Bundle')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="aloeveralotion.jpg" alt="aloe vera lotion"></div>
+        <div class="product-info">
+          <div class="product-cat">Skincare</div>
+          <div class="product-name">Aloe Vera Lotion</div>
+          <div class="product-desc">Pure aloe vera lotion formulated with locally grown plants and natural extracts.</div>
+          <div class="product-footer">
+            <span class="product-price">M 70.00</span>
+            <button class="add-to-cart" onclick="addToCart('Aloe Vera Lotion')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="notebook.jpg" alt="handmade notebooks"></div>
+        <div class="product-info">
+          <div class="product-cat">Stationery</div>
+          <div class="product-name">Handmade Notebooks</div>
+          <div class="product-desc">Eco-friendly notebooks crafted from recycled paper by Maseru artisans.</div>
+          <div class="product-footer">
+            <span class="product-price">M 28.00</span>
+            <button class="add-to-cart" onclick="addToCart('Handmade Notebooks')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="table.jpg" alt="wooden side table"><span class="product-badge">Handcrafted</span></div>
+        <div class="product-info">
+          <div class="product-cat">Furniture</div>
+          <div class="product-name">Wooden Side Table</div>
+          <div class="product-desc">Handcrafted from locally sourced timber by Lesotho's skilled carpenters.</div>
+          <div class="product-footer">
+            <span class="product-price">M 480.00</span>
+            <button class="add-to-cart" onclick="addToCart('Wooden Side Table')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="chilisauce.jpg" alt="chilli sauce"></div>
+        <div class="product-info">
+          <div class="product-cat">Food Products</div>
+          <div class="product-name">Chilli Sauce</div>
+          <div class="product-desc">A fiery blend of locally grown peppers and herbs — a Basotho kitchen essential.</div>
+          <div class="product-footer">
+            <span class="product-price">M 32.00</span>
+            <button class="add-to-cart" onclick="addToCart('Chilli Sauce')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="beadedjewellery.jpg" alt="beaded jewellery set"></div>
+        <div class="product-info">
+          <div class="product-cat">Clothing & Crafts</div>
+          <div class="product-name">Beaded Jewellery Set</div>
+          <div class="product-desc">Vibrant hand-beaded earrings and bracelets made by women's cooperatives.</div>
+          <div class="product-footer">
+            <span class="product-price">M 120.00</span>
+            <button class="add-to-cart" onclick="addToCart('Beaded Jewellery Set')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"><img src="biscuits.jpg" alt="sorghum biscuits"></div>
+        <div class="product-info">
+          <div class="product-cat">Food Products</div>
+          <div class="product-name">Sorghum Biscuits</div>
+          <div class="product-desc">Nutritious biscuits baked from indigenous sorghum grain — a local favourite.</div>
+          <div class="product-footer">
+            <span class="product-price">M 22.00</span>
+            <button class="add-to-cart" onclick="addToCart('Sorghum Biscuits')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="cart-toast" id="cartToast">✓ Added to cart!</div>
+
+<footer>
+  <p>© 2025 MILCO – Made In Lesotho Cooperative | Sefika Complex, Maseru | <a href="tel:+26658921648">+266 5892 1648</a> | <a href="index.html">Home</a></p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    const burger = document.getElementById("hamburger");
+    const overlay = document.getElementById("navOverlay");
+
+    nav.classList.toggle("show");
+    burger.classList.toggle("active");
+    overlay.classList.toggle("show");
+  }
+</script>
+</body>
+</html>
